@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navbar*/
+.navbar{
+    height: 80px;
+    background-color: rgb(3, 24, 3);
+    color:antiquewhite;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    background-image: url("dermaclust_logo.png");
+    background-size: cover;
+    height: 100%;
+    width: 170px;
+    align-items: center;
+}
+
+.nav-tabs{
+    display:flex;
+    justify-content: space-evenly;
+    width: 550px;
+    height: 40px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.shop:hover{
+   border: 3px solid rgb(185, 194, 176);
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(38, 71, 1);
+    width:620px;
+    height:40px;
+    border-radius: 4px;
+}
+
+.nav-search:hover{
+    border: 3px solid rgb(143, 176, 112);
+}
+
+.cart-logo{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cart-logo i{
+    font-size: 35px;
+    align-items: center;
+}
+
+.search-select{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: antiquewhite;
+    width:50px;
+    text-align: center;
+    border: none;
+}
+
+.search-input{
+    width:100%;
+    font-size: 1rem;
+    border:none;
+}
+.search-icon{
+    width:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Hero section*/
+
+.sub-nav{
+    height:50px;
+    background-color: rgb(50, 69, 30);
+    color: antiquewhite;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-nav p{
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+.hero-wrapper{
+    display:flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.hero-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.hero-wrapper img{
+    width: 100%;
+    min-width: 100%;
+    height: 700px;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+/*Shop-Section*/
+.shop-sec{
+    height: 40px;
+    background-color: rgb(41, 57, 24);
+    color:antiquewhite;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.concerns{
+    background-color:rgb(45, 62, 27) ;
+    height: 450px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+   margin-top: 15px;
+   border: 2px solid transparent;
+   height: 350px;
+   width: 23%;
+   background-color: rgb(75, 100, 49);
+   padding: 30px 0px 15px;
+   margin-bottom: 15px;
+}
+
+.box:hover{
+    border-color: rgb(114, 129, 98);
+    border-width: 3px;
+}
+
+.box-image{
+    background-size: cover;
+    height: 300px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    justify-content: center;
+}
+
+h2{
+    margin-left: 0.5rem;
+}
+
+/*Footer-Section*/
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    height: 50px;
+    background-color: rgb(64, 76, 50);
+    color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2{
+    height:140px;
+    background-color: rgb(3, 24, 3);
+    display: flex;
+    border-top: 0.5px solid white;
+    justify-content: space-evenly;
+}
+
+.foot-panel3{
+    height: 10px;
+    background-color: rgb(45, 62, 27);
+    color: antiquewhite;
+    border-top: 0.5px solid white;
+}
+
+.foot-contact{
+    margin-top: 20px;
+}
+
+.foot-get-to-know-us{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-logo{
+    background-image: url("dermaclust_logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 190px;
+    align-items: center;
+}
+
+ul p{
+    color: antiquewhite;
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
+
+ul a{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+ul{
+    color: antiquewhite;
+    margin-left: 2rem;
+}
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+@media screen and (max-width: 1024px){
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav-logo{
+        width: 140px;
+        height: 60px;
+    }
+
+    .nav-search{
+        width: 90%;
+    }
+
+    .nav-tabs{
+        width:90%
+    }
+
+    .hero-wrapper img{
+        height: 500px;
+    }
+}
+
+/*PHONES*/
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-logo{
+        width: 140px;
+        height: 60px;
+    }
+
+    .nav-tabs{
+        flex-direction: column;
+        width:100%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .nav-search{
+        width: 100%;
+        height: 35px;
+    }
+
+    .search-select{
+        width: 40px;
+    }
+
+    .hero-wrapper img{
+        height: 300px;
+    }
+
+    .cart-logo{
+        font-size:0.9rem;
+    }
+
+    .cart-logo i{
+        font-size: 25px;
+    }
+}
